@@ -1,23 +1,22 @@
 import React, { useEffect } from 'react'
-import ContactFormComponent from '../components/ContactFormComponent'
-import FooterComponent from '../components/FooterComponent'
 import NavBarComponent from '../components/NavBarComponent'
+import CheckoutFormComponent from '../components/CheckoutFormComponent'
+import FooterComponent from '../components/FooterComponent'
 import ChatBotComponent from '../components/ChatbotComponent'
 
-const ContactScreen = () => {
+const CheckoutScreen = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
+    
     return (
         <div>
             <NavBarComponent />
             <ChatBotComponent />
-            <div className='my-32'></div>
-            <ContactFormComponent />
+            <CheckoutFormComponent />
             <FooterComponent />
         </div>
     )
 }
 
-export default ContactScreen
+export default CheckoutScreen

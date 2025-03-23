@@ -9,6 +9,7 @@ const ProductSolvedComponent = () => {
         <div className="rounded-2xl overflow-hidden mb-8">
           <img 
             src="/assets/e3.png" 
+            alt='Main image'
             className="w-full h-auto object-cover"
           />
         </div>

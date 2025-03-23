@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LatestProductComponent = () => {
   return (
@@ -21,9 +22,9 @@ const LatestProductComponent = () => {
             The new TCU 28 automatically tracks suspicious movements with AI precision and 360° coverage, 
             ensuring advanced security for homes and streets.
           </p>
-          <a href="#" className="text-purple-600 hover:text-purple-800 font-medium">
+          <Link to="/products/details" className="text-purple-600 hover:text-purple-800 font-medium">
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </section>

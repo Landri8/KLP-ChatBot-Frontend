@@ -9,6 +9,7 @@ import CoreValuesComponent from '../components/CoreValuesComponent';
 import FAQsComponent from '../components/FAQsComponent';
 import FooterComponent from '../components/FooterComponent';
 import LatestProductComponent from '../components/LatestProductComponent';
+import ChatBotComponent from '../components/ChatbotComponent';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div>
       <NavBarComponent />
+      <ChatBotComponent />
       <div className='my-32'></div>
       <HeroComponent />
       <LatestProductComponent />

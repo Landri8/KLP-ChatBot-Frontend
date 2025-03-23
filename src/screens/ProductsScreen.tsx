@@ -6,6 +6,7 @@ import FeaturedProductsComponent from '../components/FeaturedProductsComponent'
 import KeyFeaturesComponent from '../components/KeyFeaturesComponent'
 import FAQsComponent from '../components/FAQsComponent'
 import FooterComponent from '../components/FooterComponent'
+import ChatBotComponent from '../components/ChatbotComponent'
 
 const ProductsScreen = () => {
     useEffect(() => {
@@ -14,6 +15,7 @@ const ProductsScreen = () => {
     return (
         <div>
             <NavBarComponent />
+            <ChatBotComponent />
             <div className='my-32'></div>
             <div className='text-center'>
                 <h1 className="text-3xl md:text-3xl font-medium mb-8">

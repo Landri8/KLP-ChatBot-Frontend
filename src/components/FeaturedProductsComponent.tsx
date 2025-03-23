@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ProductProps {
   name: string;
@@ -25,12 +26,12 @@ const ProductItem: React.FC<ProductProps> = ({
           <p className="mb-4">
             {description}
           </p>
-          <a 
-            href={learnMoreUrl}
+          <Link 
+            to={learnMoreUrl}
             className="text-purple-600 hover:text-purple-800 font-medium"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -53,7 +54,7 @@ const FeaturedProductsComponent: React.FC = () => {
       description: "The new TCU 28 automatically tracks suspicious movements with AI precision and 360° coverage, ensuring advanced security for homes and streets.",
       imageUrl: "/assets/c4.png",
       imageAlt: "TCU-28 Indoor Security Camera",
-      learnMoreUrl: "/products/indoor-camera",
+      learnMoreUrl: "/products/details",
       imageOnRight: true
     },
     {
@@ -62,7 +63,7 @@ const FeaturedProductsComponent: React.FC = () => {
       description: "The new TCU 28 automatically tracks suspicious movements with AI precision and 360° coverage, ensuring advanced security for homes and streets.",
       imageUrl: "/assets/c2.png",
       imageAlt: "TCU-28 Mini Security Camera",
-      learnMoreUrl: "/products/mini-camera",
+      learnMoreUrl: "/products/details",
       imageOnRight: false
     },
     {
@@ -71,7 +72,7 @@ const FeaturedProductsComponent: React.FC = () => {
       description: "The new TCU 28 automatically tracks suspicious movements with AI precision and 360° coverage, ensuring advanced security for homes and streets.",
       imageUrl: "/assets/c5.jpg",
       imageAlt: "TCU-28 Outdoor Security Camera",
-      learnMoreUrl: "/products/outdoor-camera",
+      learnMoreUrl: "/products/details",
       imageOnRight: true
     }
   ];

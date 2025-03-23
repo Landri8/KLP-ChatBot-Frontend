@@ -6,6 +6,7 @@ import CoreValuesComponent from '../components/CoreValuesComponent';
 import FooterComponent from '../components/FooterComponent';
 import FAQsComponent from '../components/FAQsComponent';
 import NavBarComponent from '../components/NavBarComponent';
+import ChatBotComponent from '../components/ChatbotComponent';
 
 const AboutScreen = () => {
 
@@ -16,6 +17,7 @@ const AboutScreen = () => {
   return (
     <div>
       <NavBarComponent />
+      <ChatBotComponent />
       <div className='my-24'></div>
       <CompanyAboutComponent />
       <GrowthComponent />

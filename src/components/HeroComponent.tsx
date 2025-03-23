@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HeroComponent: React.FC = () => {
   return (
@@ -11,12 +12,12 @@ const HeroComponent: React.FC = () => {
           </h1>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors">
+            <Link to='/aboutus' className="px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors">
               Learn More
-            </button>
-            <button className="px-6 py-2 bg-white border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+            </Link>
+            <Link to={'/products'} className="px-6 py-2 bg-white border border-gray-300 rounded hover:bg-gray-50 transition-colors">
               Get Started
-            </button>
+            </Link>
           </div>
         </div>
       </div>

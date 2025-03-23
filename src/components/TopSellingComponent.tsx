@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 interface ProductProps {
   id: string;
@@ -9,7 +10,7 @@ interface ProductProps {
 
 const ProductCard: React.FC<ProductProps> = ({ id, name, description, imageUrl }) => {
   return (
-    <div className="flex flex-col items-center">
+    <Link to={`/products/details`} title='Learn more' className="flex flex-col items-center cursor-pointer">
       <div className="w-40 h-40 mb-4 flex items-center justify-center">
         {/* Placeholder for product image */}
         <div className="rounded-lg w-full h-full flex items-center justify-center">
@@ -20,7 +21,8 @@ const ProductCard: React.FC<ProductProps> = ({ id, name, description, imageUrl }
       
       <h3 className="font-medium text-center mb-1">{id}</h3>
       <p className="text-sm text-center text-gray-700">{description}</p>
-    </div>
+      
+    </Link>
   );
 };
 

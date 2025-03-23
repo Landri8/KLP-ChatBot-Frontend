@@ -6,6 +6,7 @@ import FAQsComponent from '../components/FAQsComponent'
 import FooterComponent from '../components/FooterComponent'
 import SolvedProblemsComponents from '../components/SolvedProblemsComponent'
 import ProductSolvedComponent from '../components/ProductSolvedComponent'
+import ChatBotComponent from '../components/ChatbotComponent'
 
 const SolutionsScreen = () => {
     useEffect(() => {
@@ -14,6 +15,7 @@ const SolutionsScreen = () => {
     return (
         <div>
             <NavBarComponent />
+            <ChatBotComponent />
             <div className='my-32'></div>
             <IntegrationStatsComponent />
             <SolvedProblemsComponents />
