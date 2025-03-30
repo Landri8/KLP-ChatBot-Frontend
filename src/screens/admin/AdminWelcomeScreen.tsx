@@ -16,6 +16,7 @@ interface MenuCardProps {
 
 const MenuCard: React.FC<MenuCardProps> = ({ icon, title, subtitle, link, disable }) => {
   const navigate = useNavigate();
+  const authInfo = useAuthStore((state) => state.authInfo);
   
   const handleClick = () => {
     navigate(link);
@@ -121,16 +122,18 @@ const AdminWelcomeScreen: React.FC = () => {
           />
           
           {/* Manage Users */}
-          <MenuCard
-            disable={false}
-            icon={
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-            }
-            title="Manage Users"
-            link="/admin/users"
-          />
+          {authInfo?.user.role === "1" && (
+            <MenuCard
+              disable={false}
+              icon={
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              }
+              title="Manage Users"
+              link="/admin/users"
+            />
+          )}
         </div>
 
         <div className='flex flex-col lg:flex-row gap-6 justify-center mt-6 max-w-5xl mx-auto'>

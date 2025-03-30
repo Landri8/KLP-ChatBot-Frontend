@@ -7,9 +7,9 @@ const AchievementsComponent: React.FC = () => {
         Our Achievements
       </h2>
       
-      <div className="max-w-6xl mx-auto mb-12">
-        <h3 className="font-medium mb-8">
-          Won the Best AI-Powered Surveillance <br /> Technology in 2023
+      <div className="max-w-6xl mx-auto mb-6">
+        <h3 className="font-medium mb-8 text-center">
+         _ 2023 _
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -31,12 +31,62 @@ const AchievementsComponent: React.FC = () => {
             />
           </div>
           
-          {/* Coming Soon Placeholder */}
-          <div className="bg-gray-100 rounded-xl h-64 flex items-center justify-center">
-            <p className="text-xl font-medium">COMING SOON!</p>
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src="/assets/e1.png" 
+              alt="Team receiving an award on stage" 
+              className="w-full h-64 object-cover"
+            />
           </div>
         </div>
       </div>
+
+      <div className="max-w-3xl mx-auto text-center mb-24">
+        <p className="text-lg leading-relaxed">
+          Won the Best Security Camera for Home
+        </p>
+      </div>
+
+      <div className="max-w-6xl mx-auto mb-6">
+        <h3 className="font-medium mb-8 text-center">
+         _ 2024 _
+        </h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Award Ceremony Image */}
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src="/assets/e1.png" 
+              alt="Team receiving an award on stage" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          
+          {/* Trophy Image */}
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src="/assets/e2.png" 
+              alt="Gold trophy award for AI technology" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
+          
+          <div className="rounded-xl overflow-hidden">
+            <img 
+              src="/assets/e1.png" 
+              alt="Team receiving an award on stage" 
+              className="w-full h-64 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto text-center mb-24">
+        <p className="text-lg leading-relaxed">
+          Won the Best Security Camera for Street 
+        </p>
+      </div>
+      
       
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-lg leading-relaxed">
